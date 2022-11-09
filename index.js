@@ -2,12 +2,9 @@
 
 var axios = require('axios');
 
-
-
-
 // Consumindo API 
 
-axios.get("http://87.85.164.118:3030/veiculos").then(function(data){
+axios.get("http://187.85.164.118:3030/Veiculos").then(function(data){
     console.log(data);
 }).catch(function(error){   
     if(error){
@@ -16,14 +13,13 @@ axios.get("http://87.85.164.118:3030/veiculos").then(function(data){
 });
 
 //Consumindo API 2
-
-axios.get("http://187.85.164.118:3030/fotosEstudio").then(function(fotos){
+/*axios.get("http://187.85.164.118:3030/fotosEstudio").then(function(fotos){
     console.log(fotos.data);
 }).catch(function(error){
     if(error){
         console.log(error)
     }
-});
+});*/
 
 //Entregar uma lista de IDs e Placas da API 1 onde Id_Foto_Estudio_Aberto e Id_Foto_Estudio_Aberto_Avarias está null na API 2.
 
